@@ -8,3 +8,19 @@ Point both to "#" as placeholder hrefs since the pages dont exist yet
 Do not modify anything else on the page
 
 git commit -m "landing:add terms and privacy links to footer"
+
+Create a "Terms and Conditions" page for spendly
+1. Add a new Route in [@app.py](http://app.py/);
+GET /terms->renders templates/terms.html
+2.Create templates/terms.html with generic terms and Conditions
+content appropriate for a personal expense tracking app.
+Include sections like : Acceptance of Terms , Use of Service,
+User Data, limitations of liability, and Change of Terms.
+Extend base.html if it exists, otherwise match the style of landing.html
+3. In @templates/landing.html,update the "Terms and Conditions" footer link href from "#"
+to "/terms".
+
+git commit -m "landing :add terms and Conditions page and route"
+
+Do the same as you did for terms and Conditions page,
+but form Privacy Policy.

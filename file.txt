@@ -40,3 +40,20 @@ to "/privacy".
 
 Modify only the hero sections in @templates/landing.html and @static/css/style.css
 to match this image exactly . Do not touch any other part of the page.
+
+
+Add a modal to @templates/landing.html that opens when the user clicks
+"See how it works".
+Requirements
+
+-- Clicking "see how it works" opens a modal overlay
+--Modal contains an embedded Youtube video (use any placeholder Youtube URL for 
+now , I will replace it later
+)
+-video should be playable inside the modal
+Clicking the close button OR clicking outside the modal closes it
+-when the modal closes the video must stop playing (not continue in background)
+No page libraries or dependencies  --vanilla js only since we are 
+not using any js framework in this project
+
+Do not modify any other part of the page.
